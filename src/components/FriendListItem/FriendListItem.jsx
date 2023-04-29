@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import css from './FriendListItem.module.css';
 
-const FriendListItem = ({ avatar, name, isOnline, id }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={css.item}>
-      <span className={css.status}>{isOnline}</span>
+      <span className={css[isOnline]}></span>
       <img src={avatar} alt={name} width="70" className={css.avatar} />
       <p className={css.name}>{name}</p>
     </li>
@@ -18,3 +18,4 @@ FriendListItem.propTypes = {
 };
 
 export default FriendListItem;
+
