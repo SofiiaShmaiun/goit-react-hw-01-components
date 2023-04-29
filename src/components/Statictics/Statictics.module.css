@@ -1,0 +1,16 @@
+.statistics {
+background-color: transparent;
+margin-top: 50px;
+}
+
+.statList {
+    display: flex;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100px;
+}
